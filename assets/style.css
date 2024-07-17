@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+/* navbar style */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+}
+
+.links a {
+  cursor: pointer;
+  padding-right: 15px;
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+.navbar img {
+  cursor: pointer;
+  width: 2rem;
+  margin: 5px;
+}
+/* main style  */
+
+main {
+  position: relative;
+}
+
+.background-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.text {
+  font-family: "Roboto";
+  color: white;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation: fadeIn 8s ease-out forwards;
+  animation-delay: 2s;
+}
+
+.text h1 {
+  font-size: 5rem;
+}
+
+.text p {
+  font-size: 28px;
+}
+
+/* text animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* info style */
+
+.info {
+  width: 100vw;
+  height: 100vh;
+  background: #0b1d36;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bio-container {
+  background-color: white;
+  width: 25rem;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bio-img img {
+  width: 15rem;
+  border-radius: 50%;
+}
+
+.bio-text {
+  line-height: 2;
+  text-align: center;
+  font-size: 12px;
+}
+
+.text-container {
+  padding-top: 2.5rem;
+  width: 50rem;
+  height: 35rem;
+  color: white;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.text-container p {
+  margin-bottom: 1em;
+}
+
+/* office style */
+.officeSection {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(9, 48, 68);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.office h3 {
+  padding-bottom: 25px;
+}
+
+.office a {
+  color: white;
+  text-decoration: none;
+}
+/* contact style */
+
+.contact {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  width: 90vw;
+  height: 80vh;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-info i {
+  font-size: 35px;
+}
+.contact-info a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.contact-info p {
+  text-align: center;
+}
+
+/* footer style */
+
+.footer {
+  text-align: center;
+}
+
+/* calendar style */
+.calendar {
+  width: 80vw;
+  height: 80vh;
+  margin: 5rem auto;
+}
+
+/* Responsive Web Design */
+
+/* smartphone */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    font-size: 10px;
+  }
+  .text h1 {
+    font-size: 18px;
+  }
+
+  .text p {
+    font-size: 15px;
+  }
+
+  .bio-container {
+    display: none;
+  }
+
+  .text-container p {
+    font-size: 10px;
+  }
+
+  .office h3 {
+    font-size: 12px;
+  }
+  .office p,
+  .office a {
+    font-size: 10px;
+  }
+
+  .contact-info a,
+  .contact-info i {
+    font-size: 15px;
+  }
+
+  .footer small {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .text-container {
+    height: 50rem;
+  }
+  .contact-info a,
+  .contact-info i {
+    font-size: 12px;
+  }
+
+  .footer small {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .navbar {
+    font-size: 10px;
+  }
+  .text h1 {
+    font-size: 18px;
+  }
+
+  .text p {
+    font-size: 15px;
+  }
+
+  .bio-container {
+    display: none;
+  }
+
+  .text-container {
+    height: 52rem;
+  }
+  .text-container p {
+    font-size: 8px;
+  }
+
+  .office h3 {
+    font-size: 10px;
+  }
+  .office p,
+  .office a {
+    font-size: 8px;
+  }
+
+  .contact-info a,
+  .contact-info i {
+    font-size: 10px;
+  }
+
+  .footer small {
+    font-size: 8px;
+  }
+}
