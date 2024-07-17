@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arkadiusz Bieleninik - Neurolog</title>
+    <link rel="icon" href="/assets/logo.svg" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/e049507d17.js"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-mono">
+    <!-- navbar -->
+    <nav
+      class="flex justify-between items-center bg-black bg-opacity-25 backdrop-blur-md w-full fixed z-10">
+      <div class="cursor-pointer ml-2" onclick="scrollToSection('main')">
+        <img src="./assets/logo.svg" alt="logo" class="w-8 m-1" />
+      </div>
+      <div class="flex space-x-4 text-gray-300 mr-2">
+        <a href="#" onclick="scrollToSection('info')">O mnie</a>
+        <a href="#" onclick="scrollToSection('offices')">Gabinety</a>
+      </div>
+    </nav>
+    <!-- main section -->
+    <main class="relative" id="main">
+      <div class="relative flex justify-center items-center">
+        <img
+          src="/assets/office.webp"
+          alt="office"
+          class="w-full h-screen object-cover filter brightness-50"
+          loading="lazy" />
+        <div class="text-white absolute text-center">
+          <h1 class="text-2xl md:text-4xl">Arkadiusz Bieleninik</h1>
+          <p class="text-xl md:text-2xl">Neurolog dziecięcy</p>
+        </div>
+      </div>
+    </main>
+    <!-- info section -->
+    <section
+      class="w-full h-screen bg-[#0b1d36] p-24 flex justify-between items-center"
+      id="info">
+      <div
+        class="bg-white w-96 h-[35rem] flex flex-col justify-evenly items-center">
+        <img
+          src="/assets/Arkadiusz-Bieleninik-min.webp"
+          alt="Arkadiusz-Bieleninik"
+          class="w-60 rounded-full"
+          loading="lazy" />
+        <div class="text-center text-xs leading-8">
+          <h2 class="font-medium">Arkadiusz Bieleninik</h2>
+          <p>Neurolog, pediatra</p>
+        </div>
+      </div>
+      <div class="pt-10 w-[50rem] h-[35rem] text-white text-justify leading-6">
+        <p class="mb-4">
+          Arkadiusz Bieleninik to wykwalifikowany specjalista pediatrii, który
+          od ponad 25 lat pomaga dzieciom w różnym wieku w walce z chorobami i
+          schorzeniami.
+        </p>
+        <p class="mb-4">
+          Ukończył Pomorską Akademię Medyczną w 1995 roku i zdobył tytuł
+          specjalisty pediatry, co pozwoliło mu podjąć pracę w renomowanej
+          Klinice Pediatrii, Endokrynologii, Diabetologii, Chorób Metabolicznych
+          oraz Kardiologii Dziecięcej Wieku Rozwojowego.
+        </p>
+        <p class="mb-4">
+          Od 2007 roku pracuje w Oddziale Pediatryczno-Noworodkowym, gdzie
+          swoimi umiejętnościami i doświadczeniem zyskał uznanie pacjentów i
+          personelu medycznego. Ponadto, Arkadiusz Bieleninik kontynuuje swoją
+          edukację i doskonali swoje umiejętności poprzez staże z neurologii
+          dziecięcej w renomowanych klinikach Chorób Zakaźnych i Neurologii
+          Dziecięcej oraz Klinice Neurologii Wieku Rozwojowego w Poznaniu.
+          Uczestniczył również w licznych kursach i szkoleniach zorganizowanych
+          przez CMKP oraz ukończył kurs USG pediatryczny podstawowy w Poznaniu,
+          co pozwala mu na precyzyjne diagnozowanie i leczenie schorzeń u
+          najmłodszych pacjentów.
+        </p>
+        <p>
+          Dzięki swojemu doświadczeniu, wiedzy i zaangażowaniu, Arkadiusz
+          Bieleninik zapewnia najwyższą jakość opieki medycznej swoim pacjentom,
+          a jego praca w Oddziale Pediatryczno-Noworodkowym stanowi pewność, że
+          najmłodsi pacjenci są w dobrych rękach.
+        </p>
+      </div>
+    </section>
+
+    <!-- Offices -->
+    <section
+      class="w-full h-screen bg-[#093048] flex justify-evenly items-center text-white text-center leading-6"
+      id="offices">
+      <div class="space-y-6">
+        <h3 class="pb-6">Centrum Medyczne EuroMedis</h3>
+        <p>Poniedziałek 10:00 - 16:30</p>
+        <p>Czwartek 08:00 - 13:00</p>
+        <a
+          href="https://maps.app.goo.gl/CGJ2yT13kDBRotTn6"
+          target="_blank"
+          class="block"
+          >al. Powstańców Wielkopolskich 33a, 70-111 Szczecin
+        </a>
+        <a href="tel:+48918182141" class="block">+48 91 818 21 41</a>
+      </div>
+      <div class="space-y-6">
+        <h3 class="pb-6">Fizjoline - Centrum Medyczne</h3>
+        <p>1 i 3 Piątek miesiąca <br />08:00 - 15:00</p>
+        <a
+          href="https://maps.app.goo.gl/6NYWY4WxM6GdW7W67"
+          target="_blank"
+          class="block"
+          >Kosynierów 14, 70-786 Szczecin
+        </a>
+        <a href="tel:+48918238358" class="block">+48 91 823 83 58</a>
+      </div>
+      <div class="space-y-6">
+        <h3 class="pb-6">Gabinety MAMMA</h3>
+        <p>2 i 4 Piątek miesiąca <br />08:00 - 14:00</p>
+        <a
+          href="https://maps.app.goo.gl/1sqXPC6qaiQjg6Aq8"
+          target="_blank"
+          class="block"
+          >Batalionów Chłopskich 88, 70-764 Szczecin
+        </a>
+        <a href="tel:+48914628000" class="block">+48 91 462 80 00</a>
+      </div>
+      <div class="space-y-6">
+        <h3 class="pb-6">Akademia Malucha</h3>
+        <p>Wtorek <br />08:00 - 13:00</p>
+        <a
+          href="https://maps.app.goo.gl/8uqvtHG66uUPmuy18"
+          target="_blank"
+          class="block"
+          >Niepodległości 1, 72-100 Goleniów
+        </a>
+        <a href="tel:+48609501995" class="block">+48 609 501 995 </a>
+        <a
+          href="mailto:rejestracja@bieleninikneurologdzieciecy.pl"
+          class="block"
+          >rejestracja@bieleninikneurologdzieciecy.pl</a
+        >
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="text-center p-4 bg-[#093048] text-gray-300">
+      <small
+        >&copy; 2024 Indywidualna Specjalistyczna Praktyka Lekarska Arkadiusz
+        Bieleninik. Wszelkie prawa zastrzeżone. Made by
+        <a
+          href="https://www.linkedin.com/in/lukasz-szymanski94/"
+          target="_blank"
+          class="text-blue-400"
+          >Łukasz Szymański</a
+        >
+      </small>
+    </footer>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
